@@ -1,11 +1,14 @@
 package Modelo;
 
 public abstract class Persona {
+    //Atributos
     protected String nombre;
     protected String dni;
     protected String email;
     protected String direccion;
 
+
+    //Constructor
     public Persona(String nombre, String dni, String email, String direccion) {
         this.nombre = nombre;
         this.dni = dni;
@@ -13,6 +16,7 @@ public abstract class Persona {
         this.direccion = direccion;
     }
 
+    //Getter y Setter
     public String getNombre() {
         return nombre;
     }

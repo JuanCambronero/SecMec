@@ -1,11 +1,12 @@
 package Modelo;
 
 public class Usuario extends Persona {
+    //Atributos
     protected String username;
     protected String passwordHash;
     protected String salt;
 
-
+    //Constructor
     public Usuario(String nombre, String dni, String email, String direccion, String username, String passwordHash, String salt) {
         super(nombre, dni, email, direccion);
         this.username = username;
@@ -13,6 +14,7 @@ public class Usuario extends Persona {
         this.salt = salt;
     }
 
+    //Getter y Setter
     public String getSalt() {
         return salt;
     }
