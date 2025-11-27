@@ -19,4 +19,15 @@ public class HistorialMedico extends Paciente {
     public void agregarEntrada(EntradaHistorial entrada) {
         entradasHistorialMedico.add(entrada);
     }
+
+    @Override
+    public String toString() {
+        return "HistorialMedico{" +
+                "entradasHistorialMedico=" + entradasHistorialMedico.toString() +
+                ", nombre='" + nombre + '\'' +
+                ", dni='" + dni + '\'' +
+                ", email='" + email + '\'' +
+                ", direccion='" + direccion + '\'' +
+                '}';
+    }
 }

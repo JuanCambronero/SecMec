@@ -29,4 +29,7 @@ public abstract class EntradaHistorial  extends HistorialMedico{
     public String getCausa() {
         return causa;
     }
+
+    //Metodo abstracto
+    public abstract String getTipo();
 }
