@@ -4,7 +4,7 @@ public class Usuario extends Persona {
     //Atributos
     protected String username;
     protected String passwordHash;
-    protected String salt;
+    protected String salt ;
 
     //Constructor
     public Usuario(String nombre, String dni, String email, String direccion, String username, String passwordHash, String salt) {
