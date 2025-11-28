@@ -2,6 +2,7 @@ package Vista;
 
 import Controlador.ControladorPrincipal;
 import Modelo.Administrativo;
+import Modelo.Paciente;
 
 public class Vistas {
     //Opciones del menu principal(en proceso)
@@ -15,6 +16,7 @@ public class Vistas {
         System.out.println("---Menu Administrativo---");
         System.out.println("1. Crear Administrativo");
         System.out.println("2. Mostrar Administrativo");
+        System.out.println("3. Cambiar Medico");
     }
 
     //Se muestra al seleccionar crear Admin
@@ -26,6 +28,11 @@ public class Vistas {
     public void mostrarAdministrativo(Administrativo admin){
         System.out.println("---Mostar Administrativo---");
         System.out.println(admin.toString());
+    }
+
+    //Muestra el mensaje de que se cambio el medico
+    public void cambiarMedico(Paciente p){
+        System.out.println(p.getNombre() + " su nuevo medico es " + p.getMedico());
     }
 
 

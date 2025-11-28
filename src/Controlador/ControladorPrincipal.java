@@ -1,6 +1,8 @@
 package Controlador;
 
 import Modelo.Administrativo;
+import Modelo.Medico;
+import Modelo.Paciente;
 import Vista.Vistas;
 
 import java.util.ArrayList;
@@ -9,6 +11,10 @@ import java.util.Scanner;
 public class ControladorPrincipal {
     private Vistas vc = new Vistas();
     private Scanner sc = new Scanner(System.in);
+    private Medico medico = new Medico("Juan","7474t6H","Juan@haem","s gd","juan","Juana38h93","12345678","01","Traumatologo");
+    private Medico medico2 = new Medico("Juan","7474t6H","Juan@haem","s gd","juan","Juana38h93","12345678","01","Neurologo");
+    private Paciente paciente = new Paciente("Pepe","45504838J","juan@ha","C/Juabsd",medico);
+    private Administrativo admin;
     private ArrayList<Administrativo> administrativos = new ArrayList<>();//Lista de admins
     public void menuPrincipal() {
         boolean continuar = true;
@@ -47,7 +53,7 @@ public class ControladorPrincipal {
                             vc.pedirId();
                             String id = sc.next();
                             //Se crea el admin
-                            Administrativo admin = new Administrativo(nombre, dni, email, direccion, usuario, password, "123456789", id);
+                            admin = new Administrativo(nombre, dni, email, direccion, usuario, password, "123456789", id);
                             //Se añade el admin a un ArrayList
                             administrativos.add(admin);
                             break;
@@ -58,6 +64,10 @@ public class ControladorPrincipal {
                                 vc.mostrarAdministrativo(admins);
                             }
                             break;
+
+                        case 3:
+                            admin.asignarMedico(paciente,medico2);
+                            vc.cambiarMedico(paciente);
                     }
 
                     break;
