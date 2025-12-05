@@ -17,6 +17,7 @@ public class Vistas {
         System.out.println("1. Crear Administrativo");
         System.out.println("2. Mostrar Administrativo");
         System.out.println("3. Cambiar Medico");
+        System.out.println("4. Asiganar Prueba Medica");
     }
 
     //Se muestra al seleccionar crear Admin
@@ -33,6 +34,11 @@ public class Vistas {
     //Muestra el mensaje de que se cambio el medico
     public void cambiarMedico(Paciente p){
         System.out.println(p.getNombre() + " su nuevo medico es " + p.getMedico());
+    }
+
+    //Muestra la prueba asiganda al paciente
+    public void mostrarPrueba(Paciente p){
+        System.out.println("Su historial medico es: " + p.getHistorialMedico());
     }
 
 

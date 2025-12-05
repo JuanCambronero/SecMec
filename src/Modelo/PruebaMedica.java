@@ -10,10 +10,10 @@ public class PruebaMedica extends EntradaHistorial {
     private String resultado;
 
     //Constructor
-    public PruebaMedica(String nombre, String dni, String email, String direccion, ArrayList<HistorialMedico> entradasHistorialMedico, LocalDate fecha, String idMedico, String causa, TipoPrueba tipoPrueba, String resultado) {
-        super(nombre, dni, email, direccion, entradasHistorialMedico, fecha, idMedico, causa);
-        this.resultado = resultado;
+    public PruebaMedica(LocalDate fecha, String idMedico, String causa, TipoPrueba tipoPrueba, String resultado) {
+        super(fecha, idMedico, causa);
         this.tipoPrueba = tipoPrueba;
+        this.resultado = resultado;
     }
 
 
@@ -38,10 +38,6 @@ public class PruebaMedica extends EntradaHistorial {
                 ", fecha=" + fecha +
                 ", idMedico='" + idMedico + '\'' +
                 ", causa='" + causa + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", dni='" + dni + '\'' +
-                ", email='" + email + '\'' +
-                ", direccion='" + direccion + '\'' +
                 '}';
     }
 }

@@ -3,8 +3,10 @@ package Controlador;
 import Modelo.Administrativo;
 import Modelo.Medico;
 import Modelo.Paciente;
+import Modelo.PruebaMedica;
 import Vista.Vistas;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -13,8 +15,14 @@ public class ControladorPrincipal {
     private Scanner sc = new Scanner(System.in);
     private Medico medico2 = new Medico("Juan","7474t6H","Juan@haem","s gd","juan","Juana38h93","12345678", Medico.Especialidad.NEUROLOGO);
     private Paciente paciente = new Paciente("Pepe","45504838J","juan@ha","C/Juabsd");
+    private PruebaMedica pruebaMedica = new PruebaMedica(LocalDate.of(2025, 12, 1),"01","Dolor en codo", PruebaMedica.TipoPrueba.RAYOS,"Rotura de Codo");
     private Administrativo admin;
     private ArrayList<Administrativo> administrativos = new ArrayList<>();//Lista de admins
+
+
+
+
+
     public void menuPrincipal() {
         boolean continuar = true;
         while (continuar) {
@@ -67,6 +75,13 @@ public class ControladorPrincipal {
                         case 3:
                             admin.asignarMedico(paciente,medico2);
                             vc.cambiarMedico(paciente);
+                            break;
+
+                        case 4:
+                         //Asignar Prueba
+                            admin.asignarPruebaMed(paciente, pruebaMedica);
+                            vc.mostrarPrueba(paciente);
+                            break;
                     }
 
                     break;

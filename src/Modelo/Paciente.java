@@ -13,6 +13,8 @@ public class Paciente extends Persona{
 
     }
 
+
+
     //Getter y Setter
     public Medico getMedico() {
         return medico;

@@ -10,8 +10,7 @@ public abstract class EntradaHistorial  extends HistorialMedico{
     protected String causa;
 
     //Constructor
-    public EntradaHistorial(String nombre, String dni, String email, String direccion, ArrayList<HistorialMedico> entradasHistorialMedico, LocalDate fecha, String idMedico, String causa) {
-        super(nombre, dni, email, direccion, entradasHistorialMedico);
+    public EntradaHistorial(LocalDate fecha, String idMedico, String causa) {
         this.fecha = fecha;
         this.idMedico = idMedico;
         this.causa = causa;

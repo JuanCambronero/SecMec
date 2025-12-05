@@ -7,11 +7,13 @@ public class Receta extends EntradaHistorial{
     //Atributos
     private final ArrayList<String > medicamentos;
 
-    //Constructor
-    public Receta(String nombre, String dni, String email, String direccion, Medico medico, ArrayList<HistorialMedico> entradasHistorialMedico, LocalDate fecha, String idMedico, String causa, ArrayList<String > medicamentos) {
-        super(nombre, dni, email, direccion, entradasHistorialMedico, fecha, idMedico, causa);
+    public Receta(LocalDate fecha, String idMedico, String causa, ArrayList<String> medicamentos) {
+        super(fecha, idMedico, causa);
         this.medicamentos = medicamentos;
     }
+
+
+    //Constructor
 
     //Getter Setter
     public ArrayList<String> getMedicamentos() {
@@ -31,10 +33,6 @@ public class Receta extends EntradaHistorial{
                 ", fecha=" + fecha +
                 ", idMedico='" + idMedico + '\'' +
                 ", causa='" + causa + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", dni='" + dni + '\'' +
-                ", email='" + email + '\'' +
-                ", direccion='" + direccion + '\'' +
                 '}';
     }
 }
