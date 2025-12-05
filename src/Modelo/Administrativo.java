@@ -33,14 +33,14 @@ public class Administrativo extends Usuario{
     //Metodo toString
     @Override
     public String toString() {
-        return "Administrativo{" +
-                "idAdministrativo='" + idAdministrativo + '\'' +
-                ", username='" + username + '\'' +
-                ", passwordHash='" + passwordHash + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", dni='" + dni + '\'' +
-                ", email='" + email + '\'' +
-                ", direccion='" + direccion + '\'' +
-                '}';
+        return "Administrativo {" +
+                "\n  Nombre: " + nombre +
+                "\n  DNI: " + dni +
+                "\n  Email: " + email +
+                "\n  Dirección: " + direccion +
+                "\n  Usuario: " + username +
+                "\n  ID Administrativo: " + idAdministrativo +
+                "\n}";
     }
+
 }

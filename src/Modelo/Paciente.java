@@ -31,4 +31,16 @@ public class Paciente extends Persona{
     public void setHistorialMedico(HistorialMedico historialMedico) {
         this.historialMedico = historialMedico;
     }
+
+    @Override
+    public String toString() {
+        return "Paciente{" +
+                "\n Nombre ='" + nombre  +
+                "\n dni ='" + dni +
+                "\n email ='" + email +
+                "\n Dirección ='" + direccion +
+                "\n Medico Asignado =" + medico +
+                "\n Historial Medico =" + historialMedico +
+                '}';
+    }
 }

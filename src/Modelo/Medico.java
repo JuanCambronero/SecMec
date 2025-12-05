@@ -23,15 +23,15 @@ public class Medico extends PersonalSanitario{
     //Metodo toString
     @Override
     public String toString() {
-        return "Medico{" +
-                "especialidad='" + especialidad + '\'' +
-                ", numColegiado='" + numColegiado + '\'' +
-                ", username='" + username + '\'' +
-                ", passwordHash='" + passwordHash + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", dni='" + dni + '\'' +
-                ", email='" + email + '\'' +
-                ", direccion='" + direccion + '\'' +
-                '}';
+        return "Medico {" +
+                "\n  Nombre: " + nombre +
+                "\n  DNI: " + dni +
+                "\n  Email: " + email +
+                "\n  Dirección: " + direccion +
+                "\n  Usuario: " + username +
+                "\n  Nº Colegiado: " + numColegiado +
+                "\n  Especialidad: " + especialidad +
+                "\n}";
     }
+
 }
