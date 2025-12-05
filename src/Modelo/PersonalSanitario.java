@@ -5,9 +5,9 @@ public abstract class PersonalSanitario extends Usuario{
     protected String numColegiado;
 
     //Constructor
-    public PersonalSanitario(String nombre, String dni, String email, String direccion, String username, String passwordHash, String salt, String numColegiado) {
-        super(nombre, dni, email, direccion, username, passwordHash, salt);
-        this.numColegiado = numColegiado;
+    public PersonalSanitario(String nombre, String dni, String email, String direccion, String username, String passwordHash, String numColegiado) {
+        super(nombre, dni, email, direccion, username, passwordHash);
+        this.numColegiado = this.numColegiado;
     }
 
     //Getter y Setter
@@ -26,7 +26,6 @@ public abstract class PersonalSanitario extends Usuario{
                 "numColegiado='" + numColegiado + '\'' +
                 ", username='" + username + '\'' +
                 ", passwordHash='" + passwordHash + '\'' +
-                ", salt='" + salt + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", dni='" + dni + '\'' +
                 ", email='" + email + '\'' +

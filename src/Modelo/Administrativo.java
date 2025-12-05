@@ -5,8 +5,8 @@ public class Administrativo extends Usuario{
     private String idAdministrativo;
 
     //Constructor
-    public Administrativo(String nombre, String dni, String email, String direccion, String username, String passwordHash, String salt, String idAdministrativo) {
-        super(nombre, dni, email, direccion, username, passwordHash, salt);
+    public Administrativo(String nombre, String dni, String email, String direccion, String username, String passwordHash, String idAdministrativo) {
+        super(nombre, dni, email, direccion, username, passwordHash);
         this.idAdministrativo = idAdministrativo;
     }
 
@@ -24,6 +24,11 @@ public class Administrativo extends Usuario{
         p.setMedico(m);
     }
 
+    //Metodo para asignar Prueba Med
+    public void asignarPruebaMed( Paciente p, PruebaMedica pm){
+        p.setHistorialMedico(pm);
+    }
+
 
     //Metodo toString
     @Override
@@ -32,7 +37,6 @@ public class Administrativo extends Usuario{
                 "idAdministrativo='" + idAdministrativo + '\'' +
                 ", username='" + username + '\'' +
                 ", passwordHash='" + passwordHash + '\'' +
-                ", salt='" + salt + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", dni='" + dni + '\'' +
                 ", email='" + email + '\'' +

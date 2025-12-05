@@ -2,20 +2,21 @@ package Modelo;
 
 public class Medico extends PersonalSanitario{
     //Atributos
-    private String especialidad;
+    public enum Especialidad {NEUROLOGO,TRAUMATOLOGO,GINECOLOGO};
+    private Especialidad especialidad;
 
     //Constructor
-    public Medico(String nombre, String dni, String email, String direccion, String username, String passwordHash, String salt, String numColegiado, String especialidad) {
-        super(nombre, dni, email, direccion, username, passwordHash, salt, numColegiado);
+    public Medico(String nombre, String dni, String email, String direccion, String username, String passwordHash, String numColegiado, Especialidad especialidad ) {
+        super(nombre, dni, email, direccion, username, passwordHash, numColegiado);
         this.especialidad = especialidad;
     }
 
     //Getter y Setter
-    public String getEspecialidad() {
-        return especialidad;
+    public Especialidad getEspecialidad() {
+        return this.especialidad;
     }
 
-    public void setEspecialidad(String especialidad) {
+    public void setEspecialidad(Especialidad especialidad) {
         this.especialidad = especialidad;
     }
 
@@ -27,7 +28,6 @@ public class Medico extends PersonalSanitario{
                 ", numColegiado='" + numColegiado + '\'' +
                 ", username='" + username + '\'' +
                 ", passwordHash='" + passwordHash + '\'' +
-                ", salt='" + salt + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", dni='" + dni + '\'' +
                 ", email='" + email + '\'' +

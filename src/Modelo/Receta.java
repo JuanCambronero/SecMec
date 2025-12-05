@@ -9,7 +9,7 @@ public class Receta extends EntradaHistorial{
 
     //Constructor
     public Receta(String nombre, String dni, String email, String direccion, Medico medico, ArrayList<HistorialMedico> entradasHistorialMedico, LocalDate fecha, String idMedico, String causa, ArrayList<String > medicamentos) {
-        super(nombre, dni, email, direccion, medico, entradasHistorialMedico, fecha, idMedico, causa);
+        super(nombre, dni, email, direccion, entradasHistorialMedico, fecha, idMedico, causa);
         this.medicamentos = medicamentos;
     }
 

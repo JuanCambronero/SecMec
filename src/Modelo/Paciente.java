@@ -3,13 +3,14 @@ package Modelo;
 public class Paciente extends Persona{
     //Atributos
     private Medico medico;
+    private HistorialMedico historialMedico;
 
 
 
     //Constructor
-    public Paciente(String nombre, String dni, String email, String direccion, Medico medico) {
+    public Paciente(String nombre, String dni, String email, String direccion) {
         super(nombre, dni, email, direccion);
-        this.medico = medico;
+
     }
 
     //Getter y Setter
@@ -19,5 +20,13 @@ public class Paciente extends Persona{
 
     public void setMedico(Medico medico) {
         this.medico = medico;
+    }
+
+    public HistorialMedico getHistorialMedico() {
+        return historialMedico;
+    }
+
+    public void setHistorialMedico(HistorialMedico historialMedico) {
+        this.historialMedico = historialMedico;
     }
 }

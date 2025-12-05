@@ -4,24 +4,24 @@ public class Usuario extends Persona {
     //Atributos
     protected String username;
     protected String passwordHash;
-    protected String salt ;
+//    protected String salt ;
 
     //Constructor
-    public Usuario(String nombre, String dni, String email, String direccion, String username, String passwordHash, String salt) {
+    public Usuario(String nombre, String dni, String email, String direccion, String username, String passwordHash) {
         super(nombre, dni, email, direccion);
         this.username = username;
         this.passwordHash = passwordHash;
-        this.salt = salt;
+//        this.salt = salt;
     }
 
     //Getter y Setter
-    public String getSalt() {
-        return salt;
-    }
-
-    public void setSalt(String salt) {
-        this.salt = salt;
-    }
+//    public String getSalt() {
+//        return salt;
+//    }
+//
+//    public void setSalt(String salt) {
+//        this.salt = salt;
+//    }
 
     public String getPasswordHash() {
         return passwordHash;
@@ -44,7 +44,6 @@ public class Usuario extends Persona {
         return "Usuario{" +
                 "username='" + username + '\'' +
                 ", passwordHash='" + passwordHash + '\'' +
-                ", salt='" + salt + '\'' +
                 '}';
     }
 }

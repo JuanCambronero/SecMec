@@ -7,8 +7,8 @@ public class HistorialMedico extends Paciente {
     private ArrayList<HistorialMedico> entradasHistorialMedico;
 
 
-    public HistorialMedico(String nombre, String dni, String email, String direccion, Medico medico, ArrayList<HistorialMedico> entradasHistorialMedico) {
-        super(nombre, dni, email, direccion, medico);
+    public HistorialMedico(String nombre, String dni, String email, String direccion, ArrayList<HistorialMedico> entradasHistorialMedico) {
+        super(nombre, dni, email, direccion);
         this.entradasHistorialMedico = entradasHistorialMedico;
     }
 
