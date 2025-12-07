@@ -21,7 +21,6 @@ Al ejecutar el programa se crea un conjunto de datos de prueba (médico, adminis
   - `Persona`, `Usuario`, `PersonalSanitario`, `Medico`, `Paciente`, `Administrativo`: jerarquía de clases que representa a los distintos tipos de personas del sistema. 
   - `EntradaHistorial`, `Receta`, `PruebaMedica`, `HistorialMedico`: gestión del historial médico del paciente, con entradas para recetas (lista de medicamentos) y pruebas médicas (tipo de prueba y resultado).
 
-## Estructura del proyecto
 
 ```plaintext
 src/
