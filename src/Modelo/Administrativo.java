@@ -26,7 +26,8 @@ public class Administrativo extends Usuario{
 
     //Metodo para asignar Prueba Med
     public void asignarPruebaMed( Paciente p, PruebaMedica pm){
-        p.setHistorialMedico(pm);
+           p.getHistorialMedico().agregarEntrada(pm);
+
     }
 
 

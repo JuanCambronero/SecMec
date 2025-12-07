@@ -33,8 +33,9 @@ public void iniciar (){
 
 
     //Pruebas de historial
-    Receta r1 = new Receta(LocalDate.now().minusDays(2),m1.getNumColegiado(),"Dolor de cabeza", (ArrayList<String>) Arrays.asList("Paracetamol 1g","Agua"));
-    PruebaMedica pm1 = new PruebaMedica (LocalDate.now().minusDays(2),m1.getNumColegiado(),"Dolor de codo", PruebaMedica.TipoPrueba.RAYOS,"Rotura Parcial");
+
+    Receta r1 = new Receta(LocalDate.now().minusDays(2),m1.getNumColegiado(),"Dolor de cabeza",  new ArrayList<>(Arrays.asList("Paracetamol 1g","Agua")));
+    PruebaMedica pm1 = new PruebaMedica (LocalDate.now().minusDays(2),m1.getNumColegiado(),"Dolor de codo", PruebaMedica.TipoPrueba.RAYOS_X,"Rotura Parcial");
 
 
     vs.printear("---Historial Medico---");

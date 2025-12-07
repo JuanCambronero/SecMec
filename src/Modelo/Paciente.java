@@ -10,7 +10,7 @@ public class Paciente extends Persona{
     //Constructor
     public Paciente(String nombre, String dni, String email, String direccion) {
         super(nombre, dni, email, direccion);
-
+        this.historialMedico = new HistorialMedico();
     }
 
 
@@ -34,13 +34,13 @@ public class Paciente extends Persona{
 
     @Override
     public String toString() {
-        return "Paciente{" +
-                "\n Nombre ='" + nombre  +
-                "\n dni ='" + dni +
-                "\n email ='" + email +
-                "\n Dirección ='" + direccion +
-                "\n Medico Asignado =" + medico +
-                "\n Historial Medico =" + historialMedico +
-                '}';
+        return "Paciente {" +
+                "\n Nombre = " + nombre  +
+                "\n dni = " + dni +
+                "\n email = " + email +
+                "\n Dirección = " + direccion +
+                "\n [Medico Asignado = " + medico + "] "+
+                "\n Historial Medico = " + historialMedico +
+                "}";
     }
 }

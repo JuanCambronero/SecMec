@@ -3,7 +3,7 @@ package Modelo;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public abstract class EntradaHistorial  extends HistorialMedico{
+public abstract class EntradaHistorial {
     //Atributos
     protected LocalDate fecha;
     protected String idMedico;

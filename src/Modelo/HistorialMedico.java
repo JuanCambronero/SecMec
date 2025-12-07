@@ -4,13 +4,15 @@ import java.util.ArrayList;
 
 public class HistorialMedico {
     //Atributos
-    private ArrayList<HistorialMedico> entradasHistorialMedico;
+    private ArrayList<EntradaHistorial> entradasHistorialMedico;
 
 
-    public HistorialMedico() {}
+    public HistorialMedico() {
+        this.entradasHistorialMedico = new ArrayList<>();
+    }
 
-    public ArrayList<HistorialMedico> getEntradasHistorialMedico() {
-        return entradasHistorialMedico;
+    public ArrayList<EntradaHistorial> getEntradasHistorialMedico() {
+        return new ArrayList<>(entradasHistorialMedico);
     }
 
     public void agregarEntrada(EntradaHistorial entrada) {
@@ -19,8 +21,14 @@ public class HistorialMedico {
 
     @Override
     public String toString() {
-        return "HistorialMedico{" +
-                "entradasHistorialMedico=" + entradasHistorialMedico.toString() +
-                '}';
+        String entradas = "";
+        if (entradasHistorialMedico.isEmpty()) {
+            entradas = " Historial medico vació";
+        }else {
+            for(int i = 0 ; i < entradasHistorialMedico.size(); i++){
+                entradas += entradasHistorialMedico.get(i).toString() + "\n";
+            }
+        }
+        return entradas + " ";
     }
 }

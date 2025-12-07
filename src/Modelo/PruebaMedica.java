@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class PruebaMedica extends EntradaHistorial {
     //Atributos
-    public enum TipoPrueba{RAYOS,TAC,RESO}
+    public enum TipoPrueba{RAYOS_X ,TAC,RESO}
     private TipoPrueba tipoPrueba;
     private String resultado;
 
@@ -33,11 +33,11 @@ public class PruebaMedica extends EntradaHistorial {
     //Metodo toString()
     @Override
     public String toString() {
-        return "PruebaMedica{" +
-                "resultado='" + resultado + '\'' +
-                ", fecha=" + fecha +
-                ", idMedico='" + idMedico + '\'' +
-                ", causa='" + causa + '\'' +
-                '}';
+        return "PruebaMedica: " +
+                "Causa = " + causa + "; " +
+                "Tipo de Prueba= " + tipoPrueba + "; "+
+                "Resultado= " + resultado + "; " +
+                "Fecha= " + fecha + "; "
+                ;
     }
 }

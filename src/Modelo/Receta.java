@@ -28,11 +28,9 @@ public class Receta extends EntradaHistorial{
     //Metodo toString()
     @Override
     public String toString() {
-        return "Receta{" +
-                "medicamentos=" + medicamentos +
-                ", fecha=" + fecha +
-                ", idMedico='" + idMedico + '\'' +
-                ", causa='" + causa + '\'' +
-                '}';
+        return "Receta: " +
+                "Medicamentos = " + medicamentos.toString() + "; " +
+                "Causa = " + causa + "; " +
+                "Fecha = " + fecha + "; ";
     }
 }
