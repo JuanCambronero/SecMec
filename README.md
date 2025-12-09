@@ -1,6 +1,6 @@
 # Sistema de Gestión Clínica (Java)
 
-Aplicación de consola en Java que simula la gestión básica de un centro médico: creación de personal sanitario y administrativo, gestión de pacientes y registro de historial médico mediante recetas y pruebas médicas.[file:3][file:5][file:6]
+Aplicación de consola en Java que simula la gestión básica de un centro médico: creación de personal sanitario y administrativo, gestión de pacientes y registro de historial médico mediante recetas y pruebas médicas.
 
 ## Descripción
 
