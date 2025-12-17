@@ -7,9 +7,18 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
-
+/**
+ * Controlador principal de la aplicación.
+ * Se encarga de orquestar la creación de datos de prueba y de coordinar
+ * la interacción entre el modelo y la vista.
+ */
 public class ControladorPrincipal {
     Vistas vs = new Vistas();
+    /**
+     * Método de inicio de la aplicación de consola.
+     * Crea usuarios, pacientes, asigna un médico y genera un historial
+     * médico de ejemplo que se muestra por pantalla.
+     */
 public void iniciar (){
     vs.printear("Pruebas v 1.0 - Version Simple");
 

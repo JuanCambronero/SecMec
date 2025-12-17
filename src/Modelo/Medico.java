@@ -1,7 +1,13 @@
 package Modelo;
-
+/**
+ * Representa a un médico de la clínica.
+ * Incluye un número de colegiado y una especialidad médica.
+ */
 public class Medico extends PersonalSanitario{
     //Atributos
+    /**
+     * Especialidades médicas disponibles para el médico.
+     */
     public enum Especialidad {NEUROLOGO,TRAUMATOLOGO,GINECOLOGO};
     private Especialidad especialidad;
 

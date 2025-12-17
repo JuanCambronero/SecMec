@@ -2,7 +2,10 @@ package Modelo;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-
+/**
+ * Representa una receta médica asociada a un paciente.
+ * Incluye la lista de medicamentos prescritos, la causa y la fecha.
+ */
 public class Receta extends EntradaHistorial{
     //Atributos
     private final ArrayList<String > medicamentos;
@@ -14,12 +17,20 @@ public class Receta extends EntradaHistorial{
 
 
     //Constructor
-
+    /**
+     * Devuelve la lista de medicamentos prescritos en la receta.
+     *
+     * @return Lista de medicamentos.
+     */
     //Getter Setter
     public ArrayList<String> getMedicamentos() {
         return medicamentos;
     }
-
+    /**
+     * Devuelve el tipo de entrada.
+     *
+     * @return Siempre "Receta".
+     */
     //metodo que retona receta
     public String getTipo(){
         return "Receta";

@@ -3,8 +3,17 @@ package Vista;
 import Controlador.ControladorPrincipal;
 import Modelo.Administrativo;
 import Modelo.Paciente;
-
+/**
+ * Clase de vista para la aplicación de consola.
+ * Encapsula las operaciones de salida por pantalla y deja preparados
+ * métodos para menús y peticiones de datos al usuario.
+ */
 public class Vistas {
+    /**
+     * Imprime un mensaje en la consola.
+     *
+     * @param ms Mensaje a mostrar.
+     */
     public void printear (String ms) {
         System.out.println(ms);
     }

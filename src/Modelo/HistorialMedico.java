@@ -1,7 +1,10 @@
 package Modelo;
 
 import java.util.ArrayList;
-
+/**
+ * Representa el historial médico de un paciente.
+ * Contiene una lista de entradas de historial (recetas y pruebas médicas).
+ */
 public class HistorialMedico {
     //Atributos
     private ArrayList<EntradaHistorial> entradasHistorialMedico;
@@ -14,7 +17,11 @@ public class HistorialMedico {
     public ArrayList<EntradaHistorial> getEntradasHistorialMedico() {
         return new ArrayList<>(entradasHistorialMedico);
     }
-
+    /**
+     * Añade una nueva entrada al historial médico.
+     *
+     * @param entrada Entrada de historial a registrar.
+     */
     public void agregarEntrada(EntradaHistorial entrada) {
         entradasHistorialMedico.add(entrada);
     }

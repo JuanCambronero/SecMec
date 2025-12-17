@@ -1,5 +1,8 @@
 package Modelo;
-
+/**
+ * Clase base abstracta que representa a una persona de la clínica.
+ * Contiene datos de identificación y contacto (nombre, DNI, email y dirección).
+ */
 public abstract class Persona {
     //Atributos
     protected String nombre;

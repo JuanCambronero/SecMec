@@ -2,7 +2,10 @@ package Modelo;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-
+/**
+ * Clase abstracta para cualquier entrada del historial médico.
+ * Define fecha, identificador de médico y causa de la consulta.
+ */
 public abstract class EntradaHistorial {
     //Atributos
     protected LocalDate fecha;
@@ -28,7 +31,11 @@ public abstract class EntradaHistorial {
     public String getCausa() {
         return causa;
     }
-
+    /**
+     * Devuelve el tipo de entrada (por ejemplo, "Receta" o "Prueba Medica").
+     *
+     * @return Tipo de la entrada como cadena.
+     */
     //Metodo abstracto
     public abstract String getTipo();
 }

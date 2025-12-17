@@ -1,5 +1,8 @@
 package Modelo;
-
+/**
+ * Representa a un usuario del sistema que puede autenticarse.
+ * Amplía {@link Persona} añadiendo nombre de usuario y hash de contraseña.
+ */
 public class Usuario extends Persona {
     //Atributos
     protected String username;

@@ -1,5 +1,8 @@
 package Modelo;
-
+/**
+ * Clase abstracta que modela al personal sanitario de la clínica.
+ * Extiende {@link Usuario} incorporando el número de colegiado.
+ */
 public abstract class PersonalSanitario extends Usuario{
     //Atributos
     protected String numColegiado;

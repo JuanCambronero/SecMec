@@ -1,5 +1,8 @@
 package Modelo;
-
+/**
+ * Representa a un paciente de la clínica.
+ * Mantiene una referencia a su médico asignado y a su historial médico.
+ */
 public class Paciente extends Persona{
     //Atributos
     private Medico medico;
